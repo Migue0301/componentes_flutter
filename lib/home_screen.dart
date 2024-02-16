@@ -5,6 +5,45 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Componentes de flutter'),
+      ),
+      body: ListView(
+        children: const [
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+          Text('KC campeones del Super Bowl 58'),
+        ],
+      ),
+    );
   }
 }
