@@ -21,12 +21,11 @@ class AppTheme{
         fontSize: 26.5,
         fontWeight: FontWeight.w500,
         fontStyle: FontStyle.italic,
-        decoration: TextDecoration.underline,
-        decorationColor: Colors.red,
-        decorationStyle: TextDecorationStyle.wavy,
-        decorationThickness: 2.0,
+        //decoration: TextDecoration.underline,
+        //decorationColor: Colors.red,
+        //decorationStyle: TextDecorationStyle.wavy,
+        //decorationThickness: 2.0,
       ),
-
       // Estilo para texto muy pequeño
       bodySmall: GoogleFonts.anekOdia(
         color: secondaryColor,
