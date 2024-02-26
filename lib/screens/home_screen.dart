@@ -22,8 +22,14 @@ class HomeScreen extends StatelessWidget {
             subtitle: Text(
               'Introduciendo valores',
             style: AppTheme.darkTheme.textTheme.bodySmall),
-            leading: const Icon(Icons.input),
-            trailing: const Icon(Icons.arrow_right_alt_rounded),
+            leading: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.input),
+            ),
+            trailing: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.arrow_circle_right_rounded),
+            ),
             onTap: () {
               final ruta1 = MaterialPageRoute(builder: (context) {
                 return const InputsScreen();
@@ -37,9 +43,16 @@ class HomeScreen extends StatelessWidget {
               'Listview.builder',
             style: AppTheme.darkTheme.textTheme.headlineLarge,
             ),
-            subtitle: const Text('Lista con scroll infinito'),
-            leading: const Icon(Icons.list),
-            trailing: const Icon(Icons.arrow_circle_right_rounded),
+            subtitle: Text('Lista con scroll infinito',
+            style: AppTheme.darkTheme.textTheme.bodySmall),
+            leading: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.list),
+            ),
+            trailing: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.arrow_circle_right_rounded),
+            ),
           ),
           const Divider(),
           ListTile(
@@ -47,9 +60,16 @@ class HomeScreen extends StatelessWidget {
               'Notificaciones',
             style: AppTheme.darkTheme.textTheme.headlineLarge,
             ),
-            subtitle: const Text('Mostrar una notificación'),
-            leading: const Icon(Icons.notification_add),
-            trailing: const Icon(Icons.arrow_right_alt_rounded),
+            subtitle: Text('Mostrar una notificación',
+            style: AppTheme.darkTheme.textTheme.bodySmall),
+            leading: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.notification_add),
+            ),
+            trailing: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.arrow_circle_right_rounded),
+            ),
           ),
         ],
       ),
