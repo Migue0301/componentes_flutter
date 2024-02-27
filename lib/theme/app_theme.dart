@@ -14,7 +14,7 @@ class AppTheme{
     scaffoldBackgroundColor: backColor,
     appBarTheme: AppBarTheme(
       color: primaryColor,
-      titleTextStyle: GoogleFonts.aBeeZee(
+      titleTextStyle: GoogleFonts.acme(
         color: Colors.white,
         fontSize: 28.5,
         fontWeight: FontWeight.bold,
@@ -50,8 +50,14 @@ class AppTheme{
         //decorationStyle: TextDecorationStyle.wavy,
         //decorationThickness: 2.0,
       ),
+      headlineMedium: GoogleFonts.montserrat(
+        color: secondaryColor,
+        fontSize: 21.0,
+        fontWeight: FontWeight.bold,
+
+      ),
       // Estilo para texto muy pequeño
-      bodySmall: GoogleFonts.anekOdia(
+      bodySmall: GoogleFonts.habibi(
         color: secondaryColor,
         fontSize: 16.0,
       ),
