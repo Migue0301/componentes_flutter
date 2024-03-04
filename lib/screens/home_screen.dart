@@ -1,5 +1,8 @@
 import'package:flutter/material.dart';
+import 'package:practica3_5b/screens/image_screen.dart';
+import 'package:practica3_5b/screens/infinite_scroll_screen.dart';
 import 'package:practica3_5b/screens/inputs_screen.dart';
+import 'package:practica3_5b/screens/notifications_screen.dart';
 import 'package:practica3_5b/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,6 +52,12 @@ class HomeScreen extends StatelessWidget {
               data: AppTheme.darkTheme.iconTheme,
               child: const Icon(Icons.list),
             ),
+            onTap: () {
+              final ruta2 = MaterialPageRoute(builder: (context) {
+                return const InfiniteScrollScreen();
+              });
+              Navigator.push(context, ruta2);
+            },
             trailing: IconTheme(
               data: AppTheme.darkTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
@@ -66,6 +75,35 @@ class HomeScreen extends StatelessWidget {
               data: AppTheme.darkTheme.iconTheme,
               child: const Icon(Icons.notification_add),
             ),
+            onTap: () {
+              final ruta3 = MaterialPageRoute(builder: (context) {
+                return const NotificationsScreen();
+              });
+              Navigator.push(context, ruta3);
+            },
+            trailing: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.arrow_circle_right_rounded),
+            ),
+          ),
+          const Divider(),
+          ListTile(
+            title: Text(
+              'Imagenes',
+            style: AppTheme.darkTheme.textTheme.headlineLarge,
+            ),
+            subtitle: Text('Mostrar unas fotos locochonas',
+            style: AppTheme.darkTheme.textTheme.bodySmall),
+            leading: IconTheme(
+              data: AppTheme.darkTheme.iconTheme,
+              child: const Icon(Icons.image_outlined),
+            ),
+            onTap: () {
+              final ruta4 = MaterialPageRoute(builder: (context) {
+                return const ImageScreen();
+              });
+              Navigator.push(context, ruta4);
+            },
             trailing: IconTheme(
               data: AppTheme.darkTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
