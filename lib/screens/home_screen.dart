@@ -1,5 +1,5 @@
 import'package:flutter/material.dart';
-import 'package:practica3_5b/screens/image_screen.dart';
+import 'package:practica3_5b/screens/images_screen.dart';
 import 'package:practica3_5b/screens/infinite_scroll_screen.dart';
 import 'package:practica3_5b/screens/inputs_screen.dart';
 import 'package:practica3_5b/screens/notifications_screen.dart';
@@ -20,17 +20,17 @@ class HomeScreen extends StatelessWidget {
             title: Text(
               'Entradas',
             // style: Theme.of(context).textTheme.headlineLarge,
-            style: AppTheme.darkTheme.textTheme.headlineLarge,
+            style: AppTheme.lightTheme.textTheme.headlineLarge,
             ),
             subtitle: Text(
               'Introduciendo valores',
-            style: AppTheme.darkTheme.textTheme.bodySmall),
+            style: AppTheme.lightTheme.textTheme.bodySmall),
             leading: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.input),
             ),
             trailing: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
             ),
             onTap: () {
@@ -44,12 +44,12 @@ class HomeScreen extends StatelessWidget {
           ListTile(
             title: Text(
               'Listview.builder',
-            style: AppTheme.darkTheme.textTheme.headlineLarge,
+            style: AppTheme.lightTheme.textTheme.headlineLarge,
             ),
             subtitle: Text('Lista con scroll infinito',
-            style: AppTheme.darkTheme.textTheme.bodySmall),
+            style: AppTheme.lightTheme.textTheme.bodySmall),
             leading: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.list),
             ),
             onTap: () {
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(context, ruta2);
             },
             trailing: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
             ),
           ),
@@ -67,12 +67,12 @@ class HomeScreen extends StatelessWidget {
           ListTile(
             title: Text(
               'Notificaciones',
-            style: AppTheme.darkTheme.textTheme.headlineLarge,
+            style: AppTheme.lightTheme.textTheme.headlineLarge,
             ),
             subtitle: Text('Mostrar una notificación',
-            style: AppTheme.darkTheme.textTheme.bodySmall),
+            style: AppTheme.lightTheme.textTheme.bodySmall),
             leading: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.notification_add),
             ),
             onTap: () {
@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(context, ruta3);
             },
             trailing: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
             ),
           ),
@@ -90,12 +90,12 @@ class HomeScreen extends StatelessWidget {
           ListTile(
             title: Text(
               'Imagenes',
-            style: AppTheme.darkTheme.textTheme.headlineLarge,
+            style: AppTheme.lightTheme.textTheme.headlineLarge,
             ),
             subtitle: Text('Mostrar unas fotos locochonas',
-            style: AppTheme.darkTheme.textTheme.bodySmall),
+            style: AppTheme.lightTheme.textTheme.bodySmall),
             leading: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.image_outlined),
             ),
             onTap: () {
@@ -105,7 +105,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(context, ruta4);
             },
             trailing: IconTheme(
-              data: AppTheme.darkTheme.iconTheme,
+              data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.arrow_circle_right_rounded),
             ),
           ),

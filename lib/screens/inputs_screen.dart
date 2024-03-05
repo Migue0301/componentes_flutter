@@ -53,11 +53,11 @@ class _InputsScreenState extends State<InputsScreen> {
 
   TextField entradaNombre() {
     return TextField(
-      style: AppTheme.darkTheme.textTheme.headlineMedium,
+      style: AppTheme.lightTheme.textTheme.headlineMedium,
       decoration: InputDecoration(
         border: const UnderlineInputBorder(),
         labelText: 'Escribe tu nombre',
-        labelStyle: AppTheme.darkTheme.textTheme.headlineLarge,
+        labelStyle: AppTheme.lightTheme.textTheme.headlineLarge,
       ),
     );
   }
@@ -67,7 +67,7 @@ class _InputsScreenState extends State<InputsScreen> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         Text('¿Te gusta Flutter? ',
-        style: AppTheme.darkTheme.textTheme.headlineLarge),
+        style: AppTheme.lightTheme.textTheme.headlineLarge),
         Switch(
         value: switchValue,
         onChanged: (value){
@@ -84,7 +84,7 @@ class _InputsScreenState extends State<InputsScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text('Indica qué tanto te gusta Flutter: ',
-        style: AppTheme.darkTheme.textTheme.headlineLarge,
+        style: AppTheme.lightTheme.textTheme.headlineLarge,
         ),
         Slider(
           min: 0.0,

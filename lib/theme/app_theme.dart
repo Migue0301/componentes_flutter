@@ -10,7 +10,7 @@ class AppTheme{
   // Constante de color de fondo
   static const backColor = Color.fromARGB(255, 24, 24, 24);
   // Constante de tema
-  static final ThemeData darkTheme = ThemeData.dark().copyWith(
+  static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
     appBarTheme: AppBarTheme(
       color: primaryColor,
@@ -51,7 +51,7 @@ class AppTheme{
         //decorationThickness: 2.0,
       ),
       headlineMedium: GoogleFonts.montserrat(
-        color: secondaryColor,
+        color: backColor,
         fontSize: 21.0,
         fontWeight: FontWeight.bold,
 
