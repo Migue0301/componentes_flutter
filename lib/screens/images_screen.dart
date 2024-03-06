@@ -59,7 +59,7 @@ class _ImageScreenState extends State<ImageScreen> {
       height: 200.0,
       width: 200.0,
       child: Image.network('https://www.carpixel.net/w/04d481ad2a54e91aca84d4723b24cf19/bugatti-la-voiture-noire-wallpaper-hd-91532.jpg'),
-    );
+    ); 
   }
   Stack imageFade(){
     return Stack(

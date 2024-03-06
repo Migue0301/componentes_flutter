@@ -11,6 +11,7 @@ class InputsScreen extends StatefulWidget {
 class _InputsScreenState extends State<InputsScreen> {
   bool switchValue = false; // controlar el widget switch
   double sliderValue = 0.0;
+  int radioSelected = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,7 @@ class _InputsScreenState extends State<InputsScreen> {
             entradaNombre(),
             entradaSwitch(),
             entradaSlider(),
+            entradasRadio(),
             const ElevatedButton(
               onPressed: null,
               child: Text( 
@@ -101,6 +103,54 @@ class _InputsScreenState extends State<InputsScreen> {
           });
         }),
       ]
+    );
+  }
+
+  Column entradasRadio() {
+    return Column(
+      children: [
+        Text('¿Qué prefieres para desarrollo móvil? ',
+          style: AppTheme.lightTheme.textTheme.headlineLarge,
+        ),
+        ListTile(
+          title: Text(
+            'Kotlin ',
+            style: AppTheme.lightTheme.textTheme.headlineMedium,
+          ),
+          leading: Transform.scale(
+            scale: 1.5,
+            child: Radio(
+              value: 1,
+              groupValue: radioSelected,
+              onChanged: (value) {
+                setState(() {
+                  radioSelected = value!;
+                print('Selección del botón radio: $radioSelected');
+                });
+              },
+            ),
+          ),
+        ),
+        ListTile(
+          title: Text(
+            'Flutter ',
+            style: AppTheme.lightTheme.textTheme.headlineMedium,
+          ),
+          leading: Transform.scale(
+            scale: 1.5,
+            child: Radio(
+              value: 2,
+              groupValue: radioSelected,
+              onChanged: (value) {
+                setState(() {
+                  radioSelected = value!;
+                print('Selección del botón radio: $radioSelected');
+                });
+              },
+            ),
+          ),
+        )
+      ],
     );
   }
 }
