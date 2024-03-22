@@ -34,10 +34,10 @@ class HomeScreen extends StatelessWidget {
               child: const Icon(Icons.arrow_circle_right_rounded),
             ),
             onTap: () {
-              final ruta1 = MaterialPageRoute(builder: (context) {
+              final ruta0 = MaterialPageRoute(builder: (context) {
                 return const InputsScreen();
               });
-              Navigator.push(context, ruta1);
+              Navigator.push(context, ruta0);
             },
           ),
           const Divider(),
@@ -53,10 +53,10 @@ class HomeScreen extends StatelessWidget {
               child: const Icon(Icons.list),
             ),
             onTap: () {
-              final ruta2 = MaterialPageRoute(builder: (context) {
+              final ruta1 = MaterialPageRoute(builder: (context) {
                 return const InfiniteScrollScreen();
               });
-              Navigator.push(context, ruta2);
+              Navigator.push(context, ruta1);
             },
             trailing: IconTheme(
               data: AppTheme.lightTheme.iconTheme,
@@ -76,10 +76,10 @@ class HomeScreen extends StatelessWidget {
               child: const Icon(Icons.notification_add),
             ),
             onTap: () {
-              final ruta3 = MaterialPageRoute(builder: (context) {
+              final ruta2 = MaterialPageRoute(builder: (context) {
                 return const NotificationsScreen();
               });
-              Navigator.push(context, ruta3);
+              Navigator.push(context, ruta2);
             },
             trailing: IconTheme(
               data: AppTheme.lightTheme.iconTheme,
@@ -92,15 +92,38 @@ class HomeScreen extends StatelessWidget {
               'Imagenes',
             style: AppTheme.lightTheme.textTheme.headlineLarge,
             ),
-            subtitle: Text('Mostrar unas fotos locochonas',
+            subtitle: Text('Mostrar fotos',
             style: AppTheme.lightTheme.textTheme.bodySmall),
             leading: IconTheme(
               data: AppTheme.lightTheme.iconTheme,
               child: const Icon(Icons.image_outlined),
             ),
             onTap: () {
-              final ruta4 = MaterialPageRoute(builder: (context) {
+              final ruta3 = MaterialPageRoute(builder: (context) {
                 return const ImageScreen();
+              });
+              Navigator.push(context, ruta3);
+            },
+            trailing: IconTheme(
+              data: AppTheme.lightTheme.iconTheme,
+              child: const Icon(Icons.arrow_circle_right_rounded),
+            ),
+          ),
+          const Divider(),
+          ListTile(
+            title: Text(
+              'Datos',
+            style: AppTheme.lightTheme.textTheme.headlineLarge,
+            ),
+            subtitle: Text('Datos guardados',
+            style: AppTheme.lightTheme.textTheme.bodySmall),
+            leading: IconTheme(
+              data: AppTheme.lightTheme.iconTheme,
+              child: const Icon(Icons.save_alt),
+            ),
+            onTap: () {
+              final ruta4 = MaterialPageRoute(builder: (context) {
+                return const InputsScreen();
               });
               Navigator.push(context, ruta4);
             },

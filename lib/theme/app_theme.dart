@@ -6,9 +6,9 @@ class AppTheme{
   // Constante de color primario
   static const primaryColor = Color.fromARGB(255, 0, 104, 190);
   // Constante de color secundario
-  static const secondaryColor = Color.fromARGB(255, 255, 255, 255);
+  static const secondaryColor = Color.fromARGB(255, 0, 0, 0);
   // Constante de color de fondo
-  static const backColor = Color.fromARGB(255, 24, 24, 24);
+  static const backColor = Color.fromARGB(255, 255, 255, 255);
   // Constante de tema
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
@@ -51,7 +51,7 @@ class AppTheme{
         //decorationThickness: 2.0,
       ),
       headlineMedium: GoogleFonts.montserrat(
-        color: backColor,
+        color: secondaryColor,
         fontSize: 21.0,
         fontWeight: FontWeight.bold,
 
